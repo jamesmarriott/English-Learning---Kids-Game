@@ -1,0 +1,33 @@
+[
+  {
+    "about" : {
+      "Category": "adjectives",
+      "CEFR-level": "A1",
+      "General-level": "Beginner",
+      "Theme": "Body"
+    },
+    "questions" : {
+      "question1" : {
+      "ID" : 1,
+      "QL1": "Pick the correct word to complete the sentence.",
+      "QL2": "Her hair is long and _________.",
+      "Answers": {
+        "A1" : "curly", 
+        "A2" : "happy",
+        "A3" : "late",
+        "Correct" : 1
+      },
+      "question2" : {
+        "ID" : 2,
+        "QL1": "Pick the correct word to complete the sentence",
+        "QL2": "He has  ________  eyes.",
+        "Answers": {
+          "A1" : "long", 
+          "A2" : "brown",
+          "A3" : "see",
+          "Correct" : 2
+      }
+    }
+  }
+  }
+}]
