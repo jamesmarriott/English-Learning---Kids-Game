@@ -240,6 +240,7 @@ grid-template-areas:
   grid-area: avatar;
   display: flex;
   justify-content: center;
+  padding-top: 1.2vw;
 }
  
 /* player avatar sizing*/
