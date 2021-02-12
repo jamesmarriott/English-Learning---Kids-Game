@@ -1,5 +1,4 @@
 /* fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 /*custom properties */
@@ -21,56 +20,110 @@
   --color-7: #000;
   /*black. footer color*/
   --color-8: #FCE588;
-  /*http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/ */
-  font-size: 16px;
 }
 
 /*resets*/
 body, html {
   background-color: var(--main-bg);
   font-family: "poppins", sans-serif;
-  font-weight: 400;
   color: var(--color-5);
   margin: 0 auto;
   padding: 0;
+  font-size: 16px;
 }
 
-/*typograpy*/
-
+/* typograpy */
 h1{
-  font-size: 2.125rem;
+  font-size: 4vw;
   font-weight: 400;
+  line-height: 4vw;
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 2.3vw;
   font-weight: 400;
 }
 
 h3{
-  font-size: 1.3125rem;
+  font-size: 3vw;
   font-weight: 400;
 }
 
 h4{
-  font-size: 2rem;
+  font-size: 3vw;
   font-weight: 600;
 }
 
 h5{
-  font-size: 0.75rem;
-  font-weight: 600
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+    
+.player-aviatar{
+  width: 18vw;
+}
+
+.score{
+  font-size: 16vw;
+  line-height: 16vw;
+  font-weight: 400;
+}
+
+.name{
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.q-total{
+  font-size: 2.4vw;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 800px)  {
+  h1{
+    font-size: 34px;
+  }
+  h2{
+    font-size: 21px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  h4{
+    font-size: 30px;
+  }
+  h5{
+    font-size: 16px;
+  }
+  .player-aviatar{
+    width: 10rem;
+  }
+  .score{
+    font-size: 150px;
+    line-height: 150px;
+  }
+  .name{
+    font-size: 35px;
+  }
+  .q-total{
+    font-size: 22px;
+  }
+  .end-game-btn{
+    font-size: 18px;
+  }
 }
 
 /* main container */
 .main-container {
-  max-width: 890px;
+  width: 100vw;
+  max-height: 100vh;
   margin: 0 auto;
+  max-width: 800px;
 }
 
-/* end game */
+/* end game button*/
 .end-game-btn{
-  font-size: 1.3125rem;
+  font-size: 2vw;
   position: absolute;
   padding-top: .2rem;
   opacity: 0.4;
@@ -82,12 +135,18 @@ h5{
   transition: all .4s ease;
 }
 
+@media screen and (min-width: 800px) {
+  .end-game-btn{
+    font-size: 16px;
+  }
+}
 
 /* gameplay grid*/
 .gameplay-grid-container{
   text-align: center;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1rem;
+  grid-template-rows: repeat(5, 1fr)
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 
   "question question question"
@@ -97,97 +156,110 @@ h5{
   "footer footer footer";
 }
 
+/* question card */
 .quest-info { 
   grid-area: question;
   background-color: var(--main-bg);
   color: var(--color-7);
-  margin-bottom: -4%;
 }
 
 .quest-box {
   grid-area: qbox;
   background-color: var(--color-1);
   color: var(--color-6);
-  border: 5px var(--color-2) solid;
   border-radius: 16px;
 }
 
+/* answers card */
 .answers {
   grid-area: answers;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-gap: 20px;
+  grid-gap: 1rem;
 }
 
 .answers >* {
   color: var(--color-6);
   background-color: var(--color-2);
   border-radius: 16px;
-  border: 9px solid var(--color-1)
+  border: .4rem solid var(--color-2);
 }
 
+/* answer border color set to backround by default. Hover changes to highlight */
+.answer1:hover, 
+.answer2:hover,
+.answer3:hover{
+  border-radius: 16px;
+  border: .4rem solid var(--color-1);
+  cursor: pointer;
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+/* player cards */
 .players{
   grid-area: players;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 1rem;
 }
+
+/* target all the children of players */
 
 .players >*{
   color: var(--color-1);
   background-color: var(--color-8);
-  border: 4px solid var(--color-1);
+  border: .4rem solid var(--color-8);
   border-radius: 9px;
 }
 
+/* default grid layout for player one */
 .player {
 display: grid;
-grid-template-rows: auto;
 grid-template-areas:
 "avatar score"
 "name q-total";
 }
 
-.player >* {
-  position: relative;
+.player-turn{
+  background-color: var(--color-3);
+  border: .4rem solid var(--color-1);
 }
 
+/* player2 grid layout (mirror of player 1)*/
+.player2 {
+  display: inline-grid;
+  grid-template-areas:
+  "score avatar"
+  "q-total name";
+}
+
+/* styles for both players */
 .p-avatar-img {
   grid-area: avatar;
-  top: 10%;
+  display: flex;
+  justify-content: center;
 }
-
-svg {
-  height: 13rem;
-  width: 13rem;
-}
+ 
+/* player avatar sizing*/
 
 .score{
+  position: relative;
+  top: 12%;
   grid-area: score;
-  font-size: 10rem;
-  top: 5%;
-  transform:scale(1,1.4)
 }
 
 .name{
   grid-area: name;
-  font-size: 2.25rem;
-  font-weight: 600;
-  top: -25%;
 }
 
 .q-total{
   grid-area: q-total;
-  font-size: 1.25rem;
-  transform:scale(1,1.25);
-  top: -10%;
 }
 
+/* footer */
 .footer{
   grid-area: footer;
   border-radius: 16px;
 }
-
-
-

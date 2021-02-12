@@ -1,0 +1,220 @@
+[
+  {
+    "ID" : 1,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Pick the correct word to complete the sentence.",
+    "QL2": "Her hair is long and _________.",
+    "A1": {
+      "value": "curly",
+      "correct": "true"
+    },
+    "A2": {
+      "value": "curly",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "late",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 2,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 3,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 4,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 5,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 6,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 7,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 8,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },{
+    "ID" : 9,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },{
+    "ID" : 10,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  },
+  {
+    "ID" : 11,
+    "Category": "adjectives",
+    "CEFR-level": "a1",
+    "Theme": "Human Body",
+    "QL1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "QL2": "Metus aliquam eleifend mi in.",
+    "A1": {
+      "value": "Etiam erat",
+      "correct": "false"
+    },
+    "A2": {
+      "value": "Etiam dignissim",
+      "correct": "true"
+    },
+    "A3": {
+        "value": "massa",
+        "correct": "false"
+    }
+  }
+]
