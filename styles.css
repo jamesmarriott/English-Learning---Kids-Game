@@ -20,6 +20,9 @@
   --color-7: #000;
   /*black. footer color*/
   --color-8: #FCE588;
+  /* light yellow background */
+  --color-9: #464646;
+  /* top text color */
 }
 
 /*resets*/
@@ -37,15 +40,17 @@ h1{
   font-size: 4vw;
   font-weight: 400;
   line-height: 4vw;
+  margin-bottom: -1%;
+  color: var(--color-9);
 }
 
 h2{
-  font-size: 2.3vw;
+  font-size: 2.4vw;
   font-weight: 400;
 }
 
 h3{
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 400;
 }
 
@@ -55,7 +60,7 @@ h4{
 }
 
 h5{
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   font-weight: 600;
 }
     
@@ -87,13 +92,13 @@ h5{
     font-size: 21px;
   }
   h3{
-    font-size: 25px;
+    font-size: 32px;
   }
   h4{
     font-size: 30px;
   }
   h5{
-    font-size: 16px;
+    font-size: 12px;
   }
   .player-aviatar{
     width: 10rem;
@@ -116,6 +121,7 @@ h5{
 /* main container */
 .main-container {
   width: 100vw;
+
   max-height: 100vh;
   margin: 0 auto;
   max-width: 800px;
@@ -263,4 +269,6 @@ grid-template-areas:
 .footer{
   grid-area: footer;
   border-radius: 16px;
+  color: var(--color-7);
+  position: relative;
 }
