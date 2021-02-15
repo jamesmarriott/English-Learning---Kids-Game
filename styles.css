@@ -140,9 +140,8 @@ h5{
   .quest-info{
     height: 80px;
     margin-bottom: -2%;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    grid-gap: 20px;
   }
 }
 
@@ -179,7 +178,10 @@ h5{
 
 @media screen and (min-width: 920px) {
   h1 {
-    font-size: 32px;
+    font-size: 30px;
+  }
+  .quest-info {
+    background: firebrick;
   }
 }
 
