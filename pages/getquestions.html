@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>QuizKids - Face-off!</title>
+    <meta name="description" content="A two-player multiple choice game for children learning English as second language.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/getqueststyles.css">
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="get-questions-container">
+        <button Onclick="window.location.href='../index.html'" class="back-to-main-btn">---- Main menu</button>
+          <h1 class="get-questions">Get Questions</h1>
+          <div class="btn-cont"><button class="main-btn params-btn"><img src="../svgs/params.svg" class="button-img">Parameters</button></div>
+          <div class="form-contain">
+          <form class="select-quest-params">
+            <label for="category">Category:</label><br>
+            <select name="category" tabindex="1" id="category-select" class="custom-select">
+              <option value="nouns" />nouns
+              <option value="adjectives" />adjectives
+            </select><br>
+            <label for="theme">Theme:</label><br>
+            <select name="theme" tabindex="2" id="theme-select" class="custom-select">
+              <option value="christmas" />christmas
+              <option value="human-body" />human body
+            </select><br>
+            <label for="theme">Level:</label><br>
+            <select name="CEFR-level" id="level-select" class="custom-select" tabindex="3">
+              <option value="A1" />A1
+              <option value="A2" />A2
+              <option value="B1" />B1
+              <option value="B2" />B2
+              <option value="C1" />C1
+              <option value="2C" />C2
+            </select><br>
+          </div>
+          <div class="submit-contain">
+            <input type="submit" class="main-btn sumbit-btn" id="apply" value="Apply">
+          </form>
+        </div>
+          <div class="quest-display">
+            <h5>questions</h5>
+          </div>
+      </div>
+    </div>
+
+    <!-- <div class="footy">
+      <h5>Designed by the 'Curly Brace Club'</h5> -->
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <script src="index.js" async defer></script>
+  </body>
+</html>

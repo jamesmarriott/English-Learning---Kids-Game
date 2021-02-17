@@ -97,7 +97,7 @@ h5{
   justify-items: center;
   align-items: center;
   grid-template-rows:
-  [toptxt] 3fr [btns] 5fr [footr] 2fr;
+  [toptxt] 30% [btns] 50% [footr] 20%;
   max-height: 100vh;
 }
 
@@ -164,4 +164,4 @@ h5{
   border-radius: 16px;
   color: var(--color-7);
   position: relative;
-}s
+}
