@@ -98,7 +98,7 @@ h5{
   align-items: center;
   grid-template-rows:
   [toptxt] 30% [btns] 50% [footr] 20%;
-  max-height: 100vh;
+  height: 100%;
 }
 
 .top-txt{
