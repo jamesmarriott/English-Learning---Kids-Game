@@ -14,11 +14,11 @@
    viewBox="0 0 512 512"
    style="enable-background:new 0 0 512 512;"
    xml:space="preserve"
-   sodipodi:docname="tick.svg"
+   sodipodi:docname="cross.svg"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"><metadata
    id="metadata43"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs41" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -34,25 +34,13 @@
    showgrid="false"
    inkscape:zoom="0.29347694"
    inkscape:cx="-8.9414154"
-   inkscape:cy="44.95118"
+   inkscape:cy="317.545"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="0"
    inkscape:current-layer="Layer_1"
    inkscape:document-rotation="0" />
-<g
-   id="g6"
-   style="fill:#008000"
-   transform="matrix(0.6273136,0,0,0.70094719,-1.8588667e-4,201.15052)">
-	<g
-   id="g4"
-   style="fill:#008000">
-		<path
-   d="m 504.502,75.496 c -9.997,-9.998 -26.205,-9.998 -36.204,0 L 161.594,382.203 43.702,264.311 c -9.997,-9.998 -26.205,-9.997 -36.204,0 -9.998,9.997 -9.998,26.205 0,36.203 l 135.994,135.992 c 9.994,9.997 26.214,9.99 36.204,0 L 504.502,111.7 c 9.998,-9.997 9.997,-26.206 0,-36.204 z"
-   id="path2"
-   style="fill:#008000" />
-	</g>
-</g>
+
 <g
    id="g8"
    style="fill:#008000">
@@ -113,4 +101,44 @@
    id="g36"
    style="fill:#008000">
 </g>
-</svg>
+<g
+   id="g71"
+   transform="matrix(0.5873834,0,0,0.53414109,5.4818613,238.15019)"
+   style="fill:#ff0000"><g
+     id="g14-4"
+     style="fill:#ff0000"><g
+       id="g12-3"
+       style="fill:#ff0000"><path
+         d="M 294.111,256.001 504.109,46.003 c 10.523,-10.524 10.523,-27.586 0,-38.109 -10.524,-10.524 -27.587,-10.524 -38.11,0 L 256,217.892 46.002,7.894 C 35.478,-2.63 18.416,-2.63 7.893,7.894 -2.63,18.418 -2.631,35.48 7.893,46.003 L 217.891,256.001 7.893,465.999 c -10.524,10.524 -10.524,27.586 0,38.109 10.524,10.524 27.586,10.523 38.109,0 L 256,294.11 465.997,504.108 c 10.524,10.524 27.587,10.523 38.11,0 10.523,-10.524 10.523,-27.586 0,-38.109 z"
+         id="path10"
+         style="fill:#ff0000" /></g></g><g
+     id="g16-0"
+     style="fill:#ff0000" /><g
+     id="g18-1"
+     style="fill:#ff0000" /><g
+     id="g20-0"
+     style="fill:#ff0000" /><g
+     id="g22-8"
+     style="fill:#ff0000" /><g
+     id="g24-8"
+     style="fill:#ff0000" /><g
+     id="g26-9"
+     style="fill:#ff0000" /><g
+     id="g28-2"
+     style="fill:#ff0000" /><g
+     id="g30-5"
+     style="fill:#ff0000" /><g
+     id="g32-2"
+     style="fill:#ff0000" /><g
+     id="g34-9"
+     style="fill:#ff0000" /><g
+     id="g36-9"
+     style="fill:#ff0000" /><g
+     id="g38"
+     style="fill:#ff0000" /><g
+     id="g40"
+     style="fill:#ff0000" /><g
+     id="g42"
+     style="fill:#ff0000" /><g
+     id="g44"
+     style="fill:#ff0000" /></g></svg>

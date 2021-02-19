@@ -36,6 +36,8 @@ body, html {
   text-overflow: hidden;
 }
 
+*{margin: 0 auto;
+  text-align: center ;}
 
 /* typograpy */
 
@@ -60,17 +62,16 @@ h5{
 .main-container {
   margin: 0 auto;
   max-width: 1000px;
+  height: 100vh;
 }
 
 .get-questions-container{
-  padding-bottom: 20px;
   display: grid;
   height: 50%;
-  grid-template-columns: [far-left] 3fr [center-left] 1fr [mid] 5fr [center-right] 1fr [far-right] 3fr;
-  grid-template-rows: [main-get] auto [params] auto [params-fm] auto [submit-rw] auto;
+  grid-template-columns: [far-left] 2fr [center-left] 1fr [mid] 5fr [center-right] 1fr [far-right] 2fr;
+  grid-template-rows: [main-get] 1fr [params] 2fr [params-fm] 4fr [submit-rw] 1fr;
   justify-items: center;
   align-items: center;
-  grid-row-gap: 2vh;
 }
 
 .back-to-main-btn{
@@ -104,12 +105,10 @@ h5{
 
 .form-contain{
   grid-column-start: center-left;
-  grid-column-end: far-right;
-  grid-row-start: params-fm;
-  grid-row-end: params-fm;
+  grid-column-end: center-right;
+  grid-row-start: params-form;
+  grid-row-end: params-form;
   color: var(--color-1);
-  display: block;
-  width: 100%;
 }
 
 .submit-contain{
@@ -120,11 +119,25 @@ h5{
   text-align: center;
 }
 
+.quest-display{
+  grid-row-start: questions;
+  grid-row-end: questions;
+  grid-column-start: far-left;
+  grid-column-end: -1;
+  background-color: var(--color-1);
+  color: var(--color-6);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.q-item-wrapper{
+  display: grid;
+}
 
 label{
-  font-size: 2.4vw;
+  font-size: 1.5vw;
   font-weight: 500;
-  line-height: 6vw;
 }
 
 select {
@@ -133,7 +146,8 @@ select {
 
 .custom-select{
   width: 50vw;
-  font-size: 3vw;
+  max-width: 100%;
+  font-size: 1.5vw;
   background: none;
   border: none;
   border-radius: 3rem;
@@ -171,6 +185,7 @@ select {
   font-size: 3.5vw;
 }
 
+
 .big-btns{
   font-size: 3vw;
   letter-spacing: .15vw;
@@ -204,90 +219,10 @@ select {
   background-position: 15% 45%;
 }
 
-.quest-display{
-  background-color: var(--color-1);
-  color: var(--color-6);
-  border-radius: 2vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-  background-color: var(--color-4);
-}
-
-.q-item-wrapper{
-  display: grid;
-  background-color: var(--color-1);
-  border-radius: 2vw;
-  grid-template-areas: 
-  " . . . . . ."
-  ". quest-num . tk-cross1 answ-1 ."
-  ". . . . . ."
-  ". questl1 . tk-cross2 answ-2 ."
-  ". . . . . ."
-  ". questl2 . tk-cross3 answ-3 ."
-  " . . . . . .";
-  grid-template-columns: 2% 70% 2% 10% 14% 2%;
-  grid-template-rows: 2% 28% 2% 28% 2% 28% 2%;
-}
-.q-item-wrapper >* {
-  display:flex
-}
-.qnum{
-  grid-area: quest-num;
-  font-size: 1.4vw;
-}
-
-.qlineone {
-  grid-area: questl1;
-  font-size: 2vw;
-}
-
-.qlinetwo {
-  grid-area: questl2;
-  font-size: vw;
-}
-
-.qa1bol {
-  grid-area: tk-cross1;
-  background-size: 4vw;
-  background: var(--color-1) url("../svgs/tick.svg") no-repeat top right;
-}
-.qa1bo2 {
-  grid-area: tk-cross2;
-  background-size: 4vw;
-  background: var(--color-1) url("../svgs/cross.svg") no-repeat top right;
-}
-
-.qa1bo3 {
-  grid-area: tk-cross3;
-  background-size: 4vw;
-  background: var(--color-1) url("../svgs/cross.svg") no-repeat top right;
-}
-
-.qa1txt {
-  grid-area: answ-1;
-}
-
-.qa2txt {
-  grid-area: answ-2;
-}
-
-.qa3txt {
-  grid-area: answ-3;
-}
-
-.qa1txt,
-.qa2txt,
-.qa3txt {
-  font-size: 2.2vw;
-}
-
-
 @media screen and (min-width: 1000px)  {
   h1{
     /* get questions */
-    font-size: 40px;
+    font-size: 34px;
   }
   h2{
     font-size: 21px;
@@ -308,9 +243,6 @@ select {
   }
   .main-container{
     width: 1000px;
-  }
-  .get-questions-container{
-    grid-row-gap: 20px;
   }
   .params-btn{
     width: 285px;
@@ -339,60 +271,12 @@ select {
     padding-left: 3.1rem;
     outline: none;
   }
-
-  label{
-    font-size: 32px;
-    font-weight: 500;
-    text-align: left;
-    line-height: 65px;
-  }
-  
-  .custom-select{
-    width: 100%;
-    font-size: 32px;
-    background: none;
-    border: none;
-    border-radius: 3rem;
-    text-decoration: none;
-    background-color: var(--color-3);
-    color: var(--color-1);
-    outline: none;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .qnum {
-    grid-area: quest-num;
-    font-size: 18px;
-  }
-  
-  .qlineone {
-    grid-area: questl1;
-    font-size: 20px;
-  }
-  
-  .qlinetwo {
-    grid-area: questl2;
-    font-size: 22px;
-  }
-  
-  .qa1bol ,
-  .qa1bo2 ,
-  .qa1bo3 {
-    background-size: 40px;
-  }
-  .qa1txt,
-  .qa2txt,
-  .qa3txt {
-    font-size: 20px;
-  }
-  
 }
 
 /* footer */
-/* .footer{
+.footer{
   grid-area: footer;
   border-radius: 16px;
   color: var(--color-7);
   position: relative;
-} */
+} 
